@@ -1,33 +1,25 @@
+package in.gattersetter;
 
-public class car{
-    int noOfwheel;
-    int noOfdoor;
-    int maxSpeed;
-    String name;
-    String modelNumber;
-    String company;
-    public car( int noOfwheel,int noOfdoor ,int maxSpeed,String name,String modelNumber,String company) {
-        this. noOfwheel=noOfwheel;
-        this. noOfdoor = noOfdoor;
-        this. maxSpeed = maxSpeed;
-        this. name = name;
-        this. modelNumber=modelNumber;
-        this. company=company;
+public class car {
+    private String color;//let i want this in public use ;
+    private String model;//let i want this public use;
+    private double fuel;
+    private long costofpurches;//let i want deffult use
+//  now the qustion is how to access this
 
-
+    public car(String color, String model, double fuel,long costofpurpose) {
+        this.color = color;
+        this.model=model;
+        this.fuel=fuel;
+        this.costofpurches=costofpurpose;
     }
-
-    @Override
-    public String toString() {
-        return "my car name is="    +  name +'\n'+
-         "my car wheel="+noOfwheel;
+    public  String getColor(){
+        return color;
     }
-
-    public static void main(String[] args){
-        car od = new car(4 ,2,170,"od01","102","ooo");
-        System.out.println(od.toString());// agar me apne code me on ly object bhi call karun to bhi tostring method apne ap
-        //call ho jega
-
+    public String getModel(){
+        return model;
     }
-
+    void setFuel(double fuel){
+        this.fuel=fuel;
+    }
 }
