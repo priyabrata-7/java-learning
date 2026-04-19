@@ -6,5 +6,6 @@ This respository cointains basic java programs for learning and practice
 -Arrays
 -String
 -basic program
+-encapsulation(packages)
 ## Author 
 - Priyabrata
